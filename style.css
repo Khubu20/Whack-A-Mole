@@ -1,0 +1,97 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Press Start 2P', cursive; /* Pixel gaming font */
+
+}
+
+.container{
+   min-height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #0f052d;
+}
+
+.main{
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   /* width: 50rem; */
+   justify-content: center;
+   text-align: center;
+   margin: 20px auto;
+}
+
+.main h1{
+   font-size: 54px;
+   background: #00ffee;
+   text-shadow: 3px 3px 8px #ff007f; 
+}
+
+.main h2{
+   display: inline-block;
+   background: #ff007f;
+   border-radius: 20px;
+   margin: 6px;
+   padding: 12px 5px;
+   color: white;
+}
+
+button{
+   margin: 6px;
+   width: 12rem;
+   padding: 12px 5px;
+   border-radius: 20px;
+   border: none;
+   background-color: #00ffee;
+   color: black;
+   box-shadow: 0 0 10px #00ffee;
+   transition: 0.3s ease-in-out;
+}
+
+
+
+button:hover{
+   cursor: pointer;
+   background-color: #ff007f; /* Neon Pink */
+   box-shadow: 0 0 15px #ff007f;
+}
+
+.grid{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.square{
+   width: 180px;
+   height: 160px;
+   border: 1px solid black;
+   box-shadow: 0 0 12px #9400ff;
+   transition: transform 0.2s ease-in-out;
+   margin: 10px;
+
+}
+.square:hover {
+   transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.mole{
+   background: url('assest/mole.png');
+   background-size: cover;
+   filter: drop-shadow(0 0 10px #ff007f);
+}
+
+@media (max-width: 600px) {
+   .square {
+       width: 120px;
+       height: 100px;
+       margin: 5px;
+   }
+   .main h1 {
+       font-size: 36px;
+   }
+}
